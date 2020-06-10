@@ -1,2 +1,1 @@
-$('#comments_area').replaceWith
-("<%=j render 'comments/index',blog: @blog, comment: @comment, comments: @blog.comments, remote: true %>");
+$("#this_comment_<%= @comment.id %>").replaceWith("<%= j render 'comments/edit', blog: @blog, comment: @comment %>");
