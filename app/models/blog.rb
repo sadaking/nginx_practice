@@ -1,3 +1,3 @@
 class Blog < ApplicationRecord
-  has_many :comments, depend: :destroy
+  has_many :comments, dependent: :destroy
 end
